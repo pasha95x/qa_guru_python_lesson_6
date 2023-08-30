@@ -86,7 +86,9 @@ def test_readable_function():
 def print_name_func(name_func, *args):
     name_func = name_func.__name__.replace('_', ' ').title()
     str_args = str(list(args)).replace("'", "")
+    print(f'{name_func} {str_args}')
     return f'{name_func} {str_args}'
+
 
 
 def open_browser(browser_name):
